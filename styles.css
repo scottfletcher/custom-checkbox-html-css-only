@@ -1,0 +1,34 @@
+input:focus ~ label {
+	border: 2px solid blue;
+}
+
+input:checked ~ label > div {
+	background-color: black;
+}
+
+input {
+	opacity: 0;
+    pointer-events: none;
+}
+
+.checkbox-outer-container {
+	height: 100px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+.checkbox {
+	height: 90px;
+	width: 90px;
+	border: 1px solid black;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+input:not(:checked) ~ div svg {
+	display: none;
+}
